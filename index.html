@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <title>create posts blog</title>
+    <link rel="stylesheet" href="css/app.min.css" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons' rel="stylesheet">
+</head>
+
+<body>
+    <div class="app">
+        <ul class="nav">
+            <li class="nav__list">
+                <a href="#" class="nav__link" data-name="posts-box">
+                    <i class="material-icons">forum</i>
+                    Posts
+                </a>
+            </li>
+            <li class="nav__list">
+                <a href="#" class="nav__link" data-name="create-box">
+                    <i class="material-icons">add</i>
+                    Create Post
+                </a>
+            </li>
+            <li class="nav__list">
+                <a href="#" class="nav__link" data-name="favorites-box">
+                    <i class="material-icons">favorite</i>
+                    Favorites
+                </a>
+            </li>
+        </ul>
+        <div class="wrapper">
+            <div class="create-box box" data-name="create-box">
+                <h1 class="create-box__title">Create new Posts</h1>
+                <label class="create-box__label" for="title">Title</label>
+                <input class="create-box__field" type="text" id="title" name="title">
+                <label class="create-box__label" for="text">Text</label>
+                <textarea class="create-box__text" name="text" id="text" cols="30" rows="10"></textarea>
+                <label for="type">Type</label>
+                <select class="create-box__select" name="type" id="type">
+                    <option value="news">News</option>
+                    <option value="note">Note</option>
+                </select>
+                <button class="create-box__btn" id="create-btn">Create</button>
+            </div>
+            <div class="posts-box box" data-name="posts-box">
+                <div class="posts-box__inner"></div>
+            </div>
+            <div class="favorites-box box" data-name="favorites-box">
+                <div class="favorites-box__inner"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
